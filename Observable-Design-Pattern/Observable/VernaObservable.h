@@ -24,7 +24,7 @@ class VernaObservable: public ObservableInterface {
 
     void setData(int data) override {
         if(stock == 0){
-            stock+= data;
+            stock+= data; // code is running sync, so need to update stock first then notify
             this->notify();
 
         } else {
