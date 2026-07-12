@@ -6,7 +6,7 @@ class ExtraCheese : public ToppingsDecorator {
     public:
     ExtraCheese(BasePizza* base) : base(base) {}
 
-    int cost() {
+    int cost() override  {
         return base->cost() + 10;
     }
 };

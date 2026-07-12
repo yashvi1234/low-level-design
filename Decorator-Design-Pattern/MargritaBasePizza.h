@@ -1,7 +1,7 @@
 #include "BasePizza.h"
 
 class MargritaPizza : public BasePizza {
-    int cost() {
+    int cost() override {
         return 150;
     }
 };
